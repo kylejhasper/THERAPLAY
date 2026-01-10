@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://da8fltd68gg0r"]
+
+[ext_resource type="Texture2D" uid="uid://d3o5q760akfae" path="res://Assets/TopDownFantasy_Forest_v1/TopDownFantasy-Forest/Tiles/Mockup1.png" id="1_360sj"]
+[ext_resource type="Script" path="res://main.gd" id="1_f4syt"]
+[ext_resource type="Script" path="res://Slime.gd" id="1_gde18"]
+[ext_resource type="Texture2D" uid="uid://cisp36ccpg5ft" path="res://Assets/Enemy/Basic Asset Pack/Basic Asset Pack/Basic Monster Animations/Death Slime/DeathSlime.png" id="2_wwek2"]
+[ext_resource type="FontFile" uid="uid://c7ciieqrw5s6" path="res://fonts/SpaceMono-Regular.ttf" id="4_l4x7q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5b31q"]
+atlas = ExtResource("2_wwek2")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y2lkp"]
+atlas = ExtResource("2_wwek2")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17yik"]
+atlas = ExtResource("2_wwek2")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4h64f"]
+atlas = ExtResource("2_wwek2")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0wep2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5b31q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y2lkp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17yik")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4h64f")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 5.0
+}]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_f4syt")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -33.0
+offset_top = -26.0
+offset_right = 1180.0
+offset_bottom = 675.0
+texture = ExtResource("1_360sj")
+
+[node name="Enemy" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(281, 410)
+scale = Vector2(4.875, 4.5625)
+sprite_frames = SubResource("SpriteFrames_0wep2")
+animation = &"Walk"
+script = ExtResource("1_gde18")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Enemy"]
+offset_left = -11.0769
+offset_top = 7.89041
+offset_right = 9.92308
+offset_bottom = 13.8904
+theme_override_fonts/normal_font = ExtResource("4_l4x7q")
+theme_override_font_sizes/normal_font_size = 3
+bbcode_enabled = true
+text = "[center] Type this"
+scroll_active = false

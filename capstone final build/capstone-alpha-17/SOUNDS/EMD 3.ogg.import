@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bfpcqs3dklwml"
+path="res://.godot/imported/EMD 3.ogg-8ec2dafcf3b91a78dc8509c20a366103.oggvorbisstr"
+
+[deps]
+
+source_file="res://SOUNDS/EMD 3.ogg"
+dest_files=["res://.godot/imported/EMD 3.ogg-8ec2dafcf3b91a78dc8509c20a366103.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

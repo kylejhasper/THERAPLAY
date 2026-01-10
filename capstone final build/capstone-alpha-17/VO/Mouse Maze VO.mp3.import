@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8xl8g2yok65w"
+path="res://.godot/imported/Mouse Maze VO.mp3-0c7c0ebb8ef079e9fd3af461e223a8fb.mp3str"
+
+[deps]
+
+source_file="res://VO/Mouse Maze VO.mp3"
+dest_files=["res://.godot/imported/Mouse Maze VO.mp3-0c7c0ebb8ef079e9fd3af461e223a8fb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

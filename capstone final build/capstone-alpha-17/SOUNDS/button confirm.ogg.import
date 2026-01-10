@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b678nf5ffvf6x"
+path="res://.godot/imported/button confirm.ogg-beb48140bc60500b04a0786d18fb9a8b.oggvorbisstr"
+
+[deps]
+
+source_file="res://SOUNDS/button confirm.ogg"
+dest_files=["res://.godot/imported/button confirm.ogg-beb48140bc60500b04a0786d18fb9a8b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

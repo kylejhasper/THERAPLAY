@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dctt80qqxm58k"
+path="res://.godot/imported/Main Meny VO.mp3-49f47bddaeccd6f4b17aac490d9817dd.mp3str"
+
+[deps]
+
+source_file="res://VO/Main Meny VO.mp3"
+dest_files=["res://.godot/imported/Main Meny VO.mp3-49f47bddaeccd6f4b17aac490d9817dd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

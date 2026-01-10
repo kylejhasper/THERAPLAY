@@ -1,0 +1,234 @@
+[gd_scene load_steps=19 format=3 uid="uid://ci475ogqdq0sc"]
+
+[ext_resource type="Texture2D" uid="uid://dfie0ksh8n6s6" path="res://ui/Mouse Maze Page 2.png" id="1_1qle2"]
+[ext_resource type="Script" uid="uid://6a4vycptiyhb" path="res://maze_2.gd" id="1_lcnsw"]
+[ext_resource type="Texture2D" uid="uid://cyjqvmrsre0y" path="res://NEW BUTTONS/three.png" id="3_n1ecy"]
+[ext_resource type="Texture2D" uid="uid://cv8tkniwtdgqq" path="res://NEW BUTTONS/one.png" id="3_uhoul"]
+[ext_resource type="Texture2D" uid="uid://c3gpqf2wt4uau" path="res://NEW BUTTONS/onehv.png" id="4_7c2w7"]
+[ext_resource type="Texture2D" uid="uid://c7v37vxcdbu17" path="res://NEW BUTTONS/threehv.png" id="4_tsp55"]
+[ext_resource type="Texture2D" uid="uid://pcg64hfajcbf" path="res://NEW BUTTONS/two.png" id="5_hkbus"]
+[ext_resource type="Texture2D" uid="uid://cway4olcldcie" path="res://NEW BUTTONS/twohv.png" id="6_0q62p"]
+[ext_resource type="Texture2D" uid="uid://cgix35hirix7m" path="res://ui/not hoveredd/return.png" id="8_tsp55"]
+[ext_resource type="Texture2D" uid="uid://drw07j4w8heqv" path="res://ui/hovered/returnH.png" id="9_c44he"]
+[ext_resource type="Texture2D" uid="uid://pb7gvpjm71ma" path="res://ui/not hoveredd/settings button.png" id="11_uhoul"]
+[ext_resource type="Texture2D" uid="uid://cxhysshjfcpk6" path="res://ui/hovered/settingH.png" id="12_7c2w7"]
+[ext_resource type="PackedScene" uid="uid://beeuj2u8hc2c8" path="res://fade_transition.tscn" id="13_7c2w7"]
+[ext_resource type="PackedScene" uid="uid://dskhfq3gkcxim" path="res://sf_xtwo.tscn" id="14_n1ecy"]
+[ext_resource type="Texture2D" uid="uid://bj8q0b3eje7bv" path="res://NEW BUTTONS/easy.png" id="15_myj1g"]
+[ext_resource type="Texture2D" uid="uid://b122ocadew1tm" path="res://NEW BUTTONS/medium.png" id="16_2l2c2"]
+[ext_resource type="Texture2D" uid="uid://w2yfrva336ms" path="res://NEW BUTTONS/hard.png" id="17_qwmtj"]
+[ext_resource type="AudioStream" uid="uid://h13yrfk0ogst" path="res://VO/Game Level VO.mp3" id="18_0q62p"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_lcnsw")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(575.5, 322)
+scale = Vector2(0.241458, 0.243704)
+texture = ExtResource("1_1qle2")
+metadata/_edit_lock_ = true
+
+[node name="buttons (keyboard)" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -39.0
+offset_top = -1.0
+offset_right = 1.0
+offset_bottom = 39.0
+
+[node name="easyone" type="TextureButton" parent="buttons (keyboard)"]
+layout_mode = 0
+offset_left = 739.0
+offset_top = 253.0
+offset_right = 835.0
+offset_bottom = 325.0
+texture_normal = ExtResource("3_uhoul")
+texture_hover = ExtResource("4_7c2w7")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="mediumone" type="TextureButton" parent="buttons (keyboard)"]
+layout_mode = 0
+offset_left = 741.0
+offset_top = 347.0
+offset_right = 834.0
+offset_bottom = 423.0
+texture_normal = ExtResource("3_uhoul")
+texture_hover = ExtResource("4_7c2w7")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="hardone" type="TextureButton" parent="buttons (keyboard)"]
+layout_mode = 0
+offset_left = 741.0
+offset_top = 443.0
+offset_right = 833.0
+offset_bottom = 515.0
+texture_normal = ExtResource("3_uhoul")
+texture_hover = ExtResource("4_7c2w7")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="easytwo" type="TextureButton" parent="buttons (keyboard)"]
+layout_mode = 0
+offset_left = 840.0
+offset_top = 259.0
+offset_right = 925.0
+offset_bottom = 323.0
+texture_normal = ExtResource("5_hkbus")
+texture_hover = ExtResource("6_0q62p")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="mediumtwo" type="TextureButton" parent="buttons (keyboard)"]
+layout_mode = 0
+offset_left = 842.0
+offset_top = 353.0
+offset_right = 928.0
+offset_bottom = 417.0
+texture_normal = ExtResource("5_hkbus")
+texture_hover = ExtResource("6_0q62p")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="hardtwo" type="TextureButton" parent="buttons (keyboard)"]
+layout_mode = 0
+offset_left = 842.0
+offset_top = 448.0
+offset_right = 929.0
+offset_bottom = 512.0
+texture_normal = ExtResource("5_hkbus")
+texture_hover = ExtResource("6_0q62p")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="easy" type="TextureButton" parent="buttons (keyboard)"]
+layout_mode = 0
+offset_left = 933.0
+offset_top = 259.0
+offset_right = 1023.0
+offset_bottom = 327.0
+texture_normal = ExtResource("3_n1ecy")
+texture_hover = ExtResource("4_tsp55")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="medium" type="TextureButton" parent="buttons (keyboard)"]
+layout_mode = 0
+offset_left = 932.0
+offset_top = 353.0
+offset_right = 1027.0
+offset_bottom = 417.0
+texture_normal = ExtResource("3_n1ecy")
+texture_hover = ExtResource("4_tsp55")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="hard" type="TextureButton" parent="buttons (keyboard)"]
+layout_mode = 0
+offset_left = 937.0
+offset_top = 446.0
+offset_right = 1029.0
+offset_bottom = 514.0
+texture_normal = ExtResource("3_n1ecy")
+texture_hover = ExtResource("4_tsp55")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="returnbutton" type="TextureButton" parent="buttons (keyboard)"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 526.0
+offset_right = 382.0
+offset_bottom = 625.0
+texture_normal = ExtResource("8_tsp55")
+texture_hover = ExtResource("9_c44he")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="settingsbutton" type="TextureButton" parent="buttons (keyboard)"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 1.0
+offset_right = 153.0
+offset_bottom = 106.0
+texture_normal = ExtResource("11_uhoul")
+texture_hover = ExtResource("12_7c2w7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Easy" type="Sprite2D" parent="buttons (keyboard)"]
+position = Vector2(615, 292)
+scale = Vector2(0.527848, 0.515385)
+texture = ExtResource("15_myj1g")
+
+[node name="Medium" type="Sprite2D" parent="buttons (keyboard)"]
+position = Vector2(614, 386)
+scale = Vector2(0.515, 0.515)
+texture = ExtResource("16_2l2c2")
+
+[node name="Hard" type="Sprite2D" parent="buttons (keyboard)"]
+position = Vector2(612, 482)
+scale = Vector2(0.515, 0.515)
+texture = ExtResource("17_qwmtj")
+
+[node name="ColorRect" parent="." instance=ExtResource("13_7c2w7")]
+visible = false
+
+[node name="Timer" type="Timer" parent="ColorRect"]
+
+[node name="Timer2" type="Timer" parent="ColorRect"]
+
+[node name="Timer3" type="Timer" parent="ColorRect"]
+
+[node name="Timer4" type="Timer" parent="ColorRect"]
+
+[node name="Timer5" type="Timer" parent="ColorRect"]
+
+[node name="Timer6" type="Timer" parent="ColorRect"]
+
+[node name="Timer7" type="Timer" parent="ColorRect"]
+
+[node name="Timer8" type="Timer" parent="ColorRect"]
+
+[node name="Timer9" type="Timer" parent="ColorRect"]
+
+[node name="SFXtwo" parent="." instance=ExtResource("14_n1ecy")]
+
+[node name="Node" type="Node" parent="."]
+
+[node name="vo" type="AudioStreamPlayer2D" parent="Node"]
+stream = ExtResource("18_0q62p")
+autoplay = true
+
+[connection signal="mouse_entered" from="buttons (keyboard)/easyone" to="." method="_on_easyone_mouse_entered"]
+[connection signal="pressed" from="buttons (keyboard)/easyone" to="." method="_on_easyone_pressed"]
+[connection signal="mouse_entered" from="buttons (keyboard)/mediumone" to="." method="_on_mediumone_mouse_entered"]
+[connection signal="pressed" from="buttons (keyboard)/mediumone" to="." method="_on_mediumone_pressed"]
+[connection signal="mouse_entered" from="buttons (keyboard)/hardone" to="." method="_on_hardone_mouse_entered"]
+[connection signal="pressed" from="buttons (keyboard)/hardone" to="." method="_on_hardone_pressed"]
+[connection signal="mouse_entered" from="buttons (keyboard)/easytwo" to="." method="_on_easytwo_mouse_entered"]
+[connection signal="pressed" from="buttons (keyboard)/easytwo" to="." method="_on_easytwo_pressed"]
+[connection signal="mouse_entered" from="buttons (keyboard)/mediumtwo" to="." method="_on_mediumtwo_mouse_entered"]
+[connection signal="pressed" from="buttons (keyboard)/mediumtwo" to="." method="_on_mediumtwo_pressed"]
+[connection signal="mouse_entered" from="buttons (keyboard)/hardtwo" to="." method="_on_hardtwo_mouse_entered"]
+[connection signal="pressed" from="buttons (keyboard)/hardtwo" to="." method="_on_hardtwo_pressed"]
+[connection signal="mouse_entered" from="buttons (keyboard)/easy" to="." method="_on_easy_mouse_entered"]
+[connection signal="pressed" from="buttons (keyboard)/easy" to="." method="_on_easy_pressed"]
+[connection signal="mouse_entered" from="buttons (keyboard)/medium" to="." method="_on_medium_mouse_entered"]
+[connection signal="pressed" from="buttons (keyboard)/medium" to="." method="_on_medium_pressed"]
+[connection signal="mouse_entered" from="buttons (keyboard)/hard" to="." method="_on_hard_mouse_entered"]
+[connection signal="pressed" from="buttons (keyboard)/hard" to="." method="_on_hard_pressed"]
+[connection signal="mouse_entered" from="buttons (keyboard)/returnbutton" to="." method="_on_returnbutton_mouse_entered"]
+[connection signal="pressed" from="buttons (keyboard)/returnbutton" to="." method="_on_returnbutton_pressed"]
+[connection signal="mouse_entered" from="buttons (keyboard)/settingsbutton" to="." method="_on_settingsbutton_mouse_entered"]
+[connection signal="pressed" from="buttons (keyboard)/settingsbutton" to="." method="_on_settingsbutton_pressed"]
+[connection signal="timeout" from="ColorRect/Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="ColorRect/Timer2" to="." method="_on_timer_2_timeout"]
+[connection signal="timeout" from="ColorRect/Timer3" to="." method="_on_timer_3_timeout"]
+[connection signal="timeout" from="ColorRect/Timer4" to="." method="_on_timer_4_timeout"]
+[connection signal="timeout" from="ColorRect/Timer5" to="." method="_on_timer_5_timeout"]
+[connection signal="timeout" from="ColorRect/Timer6" to="." method="_on_timer_6_timeout"]
+[connection signal="timeout" from="ColorRect/Timer7" to="." method="_on_timer_7_timeout"]
+[connection signal="timeout" from="ColorRect/Timer8" to="." method="_on_timer_8_timeout"]
+[connection signal="timeout" from="ColorRect/Timer9" to="." method="_on_timer_9_timeout"]
